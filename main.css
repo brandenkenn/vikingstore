@@ -46,16 +46,19 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+html, body {height: 100%; }
 
 /*
 ================================
 My CSS
 ================================
 */
-header,
-body,
-footer {
+html {
+	width: 960px;
 	font-family: helvetica;
+	margin-right: auto;
+	margin-left: auto;
+	height: 1800px;
 }
 
 /*
@@ -64,11 +67,13 @@ Header
 ================================
 */
 
-header img {
-	height: 50px;
+header img {	
+	height: 25px;
+	margin-top: 30px;
 }
 header {
-	height: 100px;
+	background-color: #ddd;
+	height: 85px;
 	display: block;
 
 }
@@ -83,7 +88,290 @@ header {
 	display: block;
 	float: right;
 }
-.header-right li,
-.header-right img {
+.header-right img,
+.header-right li {
 	display: inline;
+}
+.cart {
+	margin-right: 50px;	
+	position: relative;
+	bottom: 5px;
+	font-weight: 600;
+}
+
+/*
+================================
+Head Box 
+================================
+*/
+.headbox {
+	height: 350px; 
+	background-image: url(images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+h1 {
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 150px;
+	font-size: 50px;
+	font-weight: 600;
+	color: black;
+
+}
+
+/*
+================================
+Second Heading
+================================
+*/
+
+.secondhead {
+	height: 115px;
+	background-color: black;
+}
+h2 {
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 45px;
+	color: white;
+	font-weight: 500;
+	font-size: 30px;
+}
+
+/*
+================================
+Instructions
+================================
+*/
+
+.instructions {
+	height: 57px;
+}
+h3 {
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 23px;
+	color: #333;
+	font-weight: 500;
+	font-size: 20px;
+	font-style: italic;
+}
+
+/*
+================================
+Products
+================================
+*/
+
+.first-row:before,
+.second-row:before,
+.thrid-row:before,
+.first-row:after,
+.second-row:after,
+.thrid-row:after {
+  content: "";
+  display: table;
+}
+.first-row:after,
+.second-row:after,
+.thrid-row:after {
+  clear: both;
+}
+.first-row,
+.second-row,
+.thrid-row {
+  clear: both;
+  *zoom: 1;
+}
+
+.products-container {
+	border: 1px solid black;
+	height: 1500px;
+	background-color: #999
+}
+.products img {
+	width: 60px;
+}
+.products {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.product-title {
+	background-color: black;
+	width: 300px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	margin-top: 10px;
+}
+h4 {
+	position: relative;
+	top: 16px;
+	font-size: 19px;
+	font-weight: 600;
+}
+.the-silent-night,
+.whispering-wind,
+.the-kingmaker,
+.the-dainty-daisy,
+.the-cunning-cutter,
+.double-trouble {
+	background-color: black;
+	width: 300px;
+	height: 350px;
+}
+.the-dainty-daisy,
+.whispering-wind,
+.the-kingmaker {
+	position: relative;
+	left: 510px;
+}
+.the-silent-night,
+.double-trouble,
+.the-cunning-cutter {
+	position: relative;
+	left: 90px;
+}
+.price {
+	color: black;
+	border: solid 1px black;
+	background: linear-gradient(#fff, #ccc);
+	width: 60px;
+	height: 23px;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	left: 239px;
+	top: 23px;
+}
+aside {
+	position: relative;
+	top: 3px;
+}
+.image-container {
+	width: 300px;
+	height: 250px;
+	background-color: #555
+}
+.the-silent-night .image-container img,
+.the-kingmaker .image-container img {
+	height: 250px;
+	width: auto;
+	position: relative;
+	left: 65px;
+
+}
+.the-dainty-daisy .image-container img,
+.double-trouble .image-container img,
+.whispering-wind .image-container img,
+.the-cunning-cutter .image-container img {
+	width: 300px;
+	position: relative;
+	top: 25px;
+}
+.double-trouble {
+	position: relative;
+	bottom: 300px;
+}
+.the-cunning-cutter {
+	position: relative;
+	bottom: 600px;
+}
+.the-dainty-daisy {
+	position: relative;
+	bottom: 360px;
+}
+.whispering-wind {
+	position: relative;
+	bottom: 660px;
+}
+.the-kingmaker {
+	position: relative;
+	bottom: 960px;
+}
+ 
+button {
+	display: block;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	margin: 20px auto;
+	color: #111;
+	background-color: #555;
+	background: -webkit-linear-gradient(##F6B26B, #e67300);
+	background: linear-gradient(#F6B26B, #e67300);
+	border: 0 none;
+	border-radius: 3px;
+	text-shadow: 0 -1px 0 #000;
+	box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+	cursor: pointer;
+}
+.first-row {
+	height: 1500px;
+}
+
+/*
+================================
+Change Page
+================================
+*/
+
+.change-page {
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	position: relative;
+	right: 20px;
+	bottom: 800px;
+
+}
+.change-page a {
+	color: white;
+}
+.change-page a:hover {
+	text-decoration: none;
+	color: #ddd;
+	text-shadow: yes;
+}
+/*
+================================
+Footer
+================================
+*/
+footer {
+	position: relative;
+	height: 205px;
+	background-color: black;
+	overflow: hidden
+
+}
+footer img {
+	height: 30px;
+}
+.contact {
+	color: orange;
+	text-align: center;
+	position: relative;
+	top: 20px;
+	font-size: 20px;
+	font-weight: 600;
+}
+.phone {
+	color: white;
+	text-align: center;
+	margin-top: 40px;
+}
+.email {
+	color: white;
+	text-align: center;
+	display: inline block;
+	margin-top: 20px;
+}
+footer ul {
+
 }
